@@ -1,0 +1,165 @@
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;900&display=swap');
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+@import 'fontawesome.scss';
+@import 'regular.scss';
+@import 'brands.scss';
+@import 'solid.scss';
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+p,span {
+    font-size: 18px ;
+}
+.results-summary-component{
+    .bloc{
+        align-items: center;
+        display: flex;
+        box-shadow: rgb(11 95 157 / 10%) 3px 4px 20px 0px;
+        border-radius: 21px;
+        .result{
+            text-align: center;
+            background: linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%),);
+            padding: 0.5em 1em 2em 1em;
+            width: 250px;
+            border-radius: 21px;
+            h2{
+                color: hsl(241, 100%, 89%);
+                font-size: 17px;
+                padding-bottom: 1em;
+                font-weight: normal;
+            }
+            .result-score{
+                background: linear-gradient( hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0),);
+                margin: 0 2.7em;
+                padding: 2em;
+                border-radius: 51%;
+    
+                span{
+                    font-size: 63px;
+                    color: hsl(0, 0%, 100%);
+                    font-style: bold;
+                }
+                p{
+                    margin: 0;
+                    font-size: 13px;
+                    color: hsl(241, 100%, 89%);
+    
+                }
+            }
+            .result-texte{
+                h3{
+                    font-size: 23px;
+                    color: hsl(0, 0%, 100%);
+    
+                }
+                p{
+                    color: hsl(241, 100%, 89%);
+                    font-size: 14px;
+                    margin: 0 2em 1em;
+    
+                }
+    
+            }
+    
+        }
+        .summary{
+            text-align: center;
+            width: 250px;
+            height: 358px;
+            padding: 1em;
+            h2{
+                padding: 0.6em 0 0em 1em;
+                margin : 0;
+                text-align: left;
+                font-size: 17px;
+            }
+            .score-type{
+    
+            }
+            .score{
+                
+            }
+            .reaction-score,.memory-score,.verbal-score,.visual-score{
+                padding: 0.9em;
+                margin: 1em 1em;
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border-radius: 7px;
+                position: relative;
+                svg{
+                    position: absolute;
+                    width: 17px;
+                    height: 17px;
+                }
+                .score-type{
+                    font-size: 14px ;
+                    padding-left: 2em;
+                }
+                .score{
+                    font-size: 14px ;
+                    span{
+                        opacity: 0.5;
+                        font-size: 14px ;
+    
+                    }
+                }
+    
+            }
+            .reaction-score{
+                background-color: hsl(0, 100%, 98%);
+                .score-type{
+                    color:  hsl(0, 100%, 67%);
+                }
+            }
+            .memory-score{
+                background-color:hsl(39, 100%, 98%);
+                .score-type{
+                    color: hsl(39, 100%, 56%);
+                }
+            }
+            .verbal-score{
+                background-color:hsl(166, 100%, 98%);
+                .score-type{
+                    color : hsl(166, 100%, 37%);
+                }
+            }
+            .visual-score{
+                background-color: hsl(234, 85%, 98%);
+                .score-type{
+                    color :  hsl(234, 85%, 45%);
+                }
+            }
+            button{
+                color: white;
+                background-color: hsl(224, 30%, 27%);
+                width: 100%;
+                border: none;
+                padding: 1em 0.8em;
+                border-radius: 19px;
+                font-weight: bold;
+                margin-top: 1em;
+                cursor: pointer;
+                
+                &:hover{
+                    animation-duration: 1s; /* Durée de l'animation */
+                    background: linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%),);
+                }
+            }
+    
+            
+    
+        }
+    }
+}
+.attribution{
+    display: none;
+}

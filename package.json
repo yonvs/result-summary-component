@@ -1,0 +1,27 @@
+{
+  "name": "results-summary-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "glob": "^10.3.3",
+    "gulp-util": "^1.0.0",
+    "lodash": "^4.17.21",
+    "minimatch": "^9.0.3",
+    "snapdragon": "^0.8.2",
+    "snapdragon-node": "^2.1.1",
+    "snapdragon-util": "^3.0.1",
+    "source-map": "^0.5.7",
+    "source-map-resolve": "^0.5.3",
+    "source-map-url": "^0.4.1"
+  }
+}
